@@ -8,14 +8,7 @@ export const usePianoStore = () => {
     const dispatch = useDispatch();
 
 
-    const onSetPlayer = (player) => {
-        dispatch(setPlayer(player))
-    }
-
-    const onSetAudioContext = (audioContext) => {
-        dispatch(setAudioContext(audioContext))
-    }
-
+   
     const onSetIsInitialized = (isInitialized) => {
         dispatch(setIsInitialized(isInitialized))
     }
@@ -26,8 +19,7 @@ export const usePianoStore = () => {
     
 
     return{
-        onSetPlayer,
-        onSetAudioContext,
+
         onSetIsInitialized,
         onSetInstrument,
         ...state
