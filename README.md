@@ -20,7 +20,7 @@ Piano App es una aplicación de piano virtual que permite a los usuarios tocar e
 ## Requisitos Previos
 
 - Node.js (versión 14 o superior)
-- npm (versión 6 o superior)
+- Yarn (versión 1.22.10 o superior)
 
 ## Instalación
 
@@ -34,51 +34,29 @@ Piano App es una aplicación de piano virtual que permite a los usuarios tocar e
 2. Instala las dependencias:
 
     ```bash
-    npm install
+    yarn install
     ```
 
 ## Scripts Disponibles
 
 - `dev`: Inicia el servidor de desarrollo.
     ```bash
-    npm run dev
+    yarn dev
     ```
 - `build`: Construye la aplicación para producción.
     ```bash
-    npm run build
+    yarn build
     ```
 - `lint`: Ejecuta ESLint para analizar el código.
     ```bash
-    npm run lint
+    yarn lint
     ```
 - `preview`: Previsualiza la aplicación construida.
     ```bash
-    npm run preview
+    yarn preview
     ```
 - `test`: Ejecuta las pruebas con Jest.
     ```bash
-    npm run test
+    yarn test
     ```
 
-## Estructura del Proyecto
-
-```plaintext
-piano-app/
-├── src/
-│   ├── components/
-│   │   ├── Piano.js
-│   │   ├── PianoKey.js
-│   │   ├── PianoKeyBlack.js
-│   │   └── ...
-│   ├── hooks/
-│   │   └── usePianoStore.js
-│   ├── store/
-│   │   ├── slices/
-│   │   │   └── pianoSlice.js
-│   │   └── ...
-│   ├── App.js
-│   └── main.js
-├── public/
-│   └── index.html
-├── package.json
-└── README.md
