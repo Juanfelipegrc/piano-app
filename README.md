@@ -1,62 +1,61 @@
 # Piano App
 
-Piano App es una aplicación de piano virtual que permite a los usuarios tocar el piano utilizando su teclado. Los usuarios pueden cambiar el sonido del instrumento por defecto (piano) a otros instrumentos como guitarra eléctrica, trompeta y saxofón.
+Piano App is a virtual piano application that allows users to play the piano using their keyboard. Users can change the default instrument sound (piano) to other instruments like electric guitar, trumpet, and saxophone.
 
-## Características
+## Features
 
-- Toca el piano virtual utilizando tu teclado.
-- Cambia el sonido del instrumento entre piano, guitarra eléctrica, trompeta y saxofón.
-- Interfaz de usuario amigable y responsiva.
+- Play the virtual piano using your keyboard.
+- Switch the instrument sound between piano, electric guitar, trumpet, and saxophone.
+- User-friendly and responsive interface.
 
-## Tecnologías Utilizadas
+## Technologies Used
 
-- **React**: Biblioteca de JavaScript para construir interfaces de usuario.
-- **Redux**: Contenedor de estado predecible para aplicaciones JavaScript.
-- **Soundfont-Player**: Biblioteca para reproducir sonidos de instrumentos musicales.
-- **Vite**: Herramienta de construcción rápida para proyectos de front-end.
-- **Jest**: Marco de pruebas para JavaScript.
-- **ESLint**: Herramienta de análisis de código estático para identificar patrones problemáticos.
+- **React**: JavaScript library for building user interfaces.
+- **Redux**: Predictable state container for JavaScript apps.
+- **Soundfont-Player**: Library for playing musical instrument sounds.
+- **Vite**: Fast build tool for front-end projects.
+- **Jest**: JavaScript testing framework.
+- **ESLint**: Static code analysis tool to identify problematic patterns.
 
-## Requisitos Previos
+## Prerequisites
 
-- Node.js (versión 14 o superior)
-- Yarn (versión 1.22.10 o superior)
+- Node.js (version 14 or higher)
+- Yarn (version 1.22.10 or higher)
 
-## Instalación
+## Installation
 
-1. Clona el repositorio:
+1. Clone the repository:
 
     ```bash
-    git clone https://github.com/tu-usuario/piano-app.git
+    git clone https://github.com/your-username/piano-app.git
     cd piano-app
     ```
 
-2. Instala las dependencias:
+2. Install dependencies:
 
     ```bash
     yarn install
     ```
 
-## Scripts Disponibles
+## Available Scripts
 
-- `dev`: Inicia el servidor de desarrollo.
+- `dev`: Starts the development server.
     ```bash
     yarn dev
     ```
-- `build`: Construye la aplicación para producción.
+- `build`: Builds the app for production.
     ```bash
     yarn build
     ```
-- `lint`: Ejecuta ESLint para analizar el código.
+- `lint`: Runs ESLint to analyze the code.
     ```bash
     yarn lint
     ```
-- `preview`: Previsualiza la aplicación construida.
+- `preview`: Previews the built application.
     ```bash
     yarn preview
     ```
-- `test`: Ejecuta las pruebas con Jest.
+- `test`: Runs tests using Jest.
     ```bash
     yarn test
     ```
-
