@@ -152,7 +152,7 @@ export const PianoApp = () => {
   
 
   return (
-    <div className='container-fluid p-0 m-0 overflow-y-hidden'>
+    <div className='container-fluid h-100 bg-primary p-0 m-0 overflow-y-hidden'>
       <Header/>
         <div className='piano-container-height overflow-y-auto d-flex justify-content-center align-items-center '>
           <HotKeys style={{
@@ -166,7 +166,7 @@ export const PianoApp = () => {
               handlers={handlers}
             >
               <LoadingPiano onStart={handleUserGesture} isInitialized={isInitialized}/>
-              <div className='container-fluid h-100 d-flex justify-content-center align-items-center'>
+              <div className='container-fluid w-100 h-100 d-flex justify-content-center align-items-center'>
                 <PianoKey notes={Object.keys(keyMap)} notesArray={keyMapArray} playSound={playSound} />
               </div>
             </HotKeys>

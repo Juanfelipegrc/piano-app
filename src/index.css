@@ -2,12 +2,6 @@
     outline: none;
 }
 
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(80, 120, 186);
-  }
 
   
   #root {
@@ -27,6 +21,6 @@ body {
 }
 
 .piano-container-height{
-  height: calc(100vh - 88px) !important;
+  height: calc(100vh - 65.61px) !important;
   overflow-y: auto;
 }

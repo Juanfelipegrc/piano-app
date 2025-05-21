@@ -10,9 +10,9 @@ export const Header = () => {
     }
 
   return (
-    <div className='container-fluid bg-black text-light p-3 d-flex justify-content-center align-content-center'>
-        <h1 className='mr-2'>PIANO APP</h1>
-        <form style={{height:'30px'}} className='flex-grow-1 mt-2 ms-2'>
+    <div className='container-fluid bg-black text-light p-3 d-flex justify-content-center align-items-center'>
+        <h1 className='m-0 mr-2'>PIANO APP</h1>
+        <form style={{height:'30px'}} className='flex-grow-1 ms-2'>
             <select className='form-select form-select-sm' name="instrument" id="instrument-select" onChange={onChangeInstrument}>
                 <option value="acoustic_grand_piano">Piano</option>
                 <option value="electric_guitar_jazz">Guitar</option>
