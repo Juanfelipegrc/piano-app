@@ -4,6 +4,7 @@ import * as Soundfont from 'soundfont-player';
 import { LoadingPiano, PianoKey } from './components/';
 import {usePianoStore} from './hooks/usePianoStore'
 import { Header } from './components/Header';
+import Swal from 'sweetalert2';
 
 const keyMap = {
   C3: 'z',
@@ -126,6 +127,11 @@ export const PianoApp = () => {
       await initAudio(instrument);
       onSetIsInitialized(true);
     } else if (audioContext && audioContext.state === 'suspended') {
+      Swal.fire({
+        title: "Is not the piano playing?",
+        text: "If the piano isn't playing, check out if the silence mode is turned on, if it is, turn it off",
+        icon: 'info'
+      })
       audioContext.resume();
     }
   };
