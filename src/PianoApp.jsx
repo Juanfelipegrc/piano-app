@@ -127,17 +127,25 @@ export const PianoApp = () => {
       await initAudio(instrument);
       onSetIsInitialized(true);
     } else if (audioContext && audioContext.state === 'suspended') {
-      await audioContext.resume();
+      await audioContext?.resume();
     }
 
-    Swal.fire({
-       title: `${audioContext?.state}`,
-       text: "'If you can't hear the piano sound, please disable Silent Mode or raise the volume.",
-       icon: 'info'
-     })
+    
     
   };
 
+  useEffect(() => {
+
+    if(isInitialized){
+    Swal.fire({
+        title: `${audioContext?.state}`,
+        text: "'If you can't hear the piano sound, please disable Silent Mode or raise the volume.",
+        icon: 'info'
+    });
+    }
+    
+  }, [isInitialized])
+  
 
 
   const playSound = (note) => {
