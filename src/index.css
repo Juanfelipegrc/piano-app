@@ -4,23 +4,19 @@
 
 
   
-  #root {
-    overflow-y: auto;
-    height: 100vh;
-  }
 
 .container-loading-piano{
     position: absolute;
     left: 0;
     top: 0;
-    background-color: rgba(34, 32, 51, 0.647);
+    background-color: rgba(49, 48, 59, 0.574);
     color: #fff;
     z-index: 999;
-    height: 100vh;
+
 
 }
 
 .piano-container-height{
-  height: calc(100vh - 65.61px) !important;
+  height: calc(100vh - 80px) !important;
   overflow-y: auto;
 }

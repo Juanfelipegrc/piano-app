@@ -10,8 +10,8 @@ export const LoadingPiano = ({onStart, isInitialized}) => {
 
 
     !isInitialized
-    ?  <div
-    className='container-fluid d-flex justify-content-center align-items-center container-loading-piano'
+    &&  <div
+    className='w-100 h-100 p-0 m-0 d-flex justify-content-center align-items-center container-loading-piano'
 
     >
 
@@ -22,7 +22,7 @@ export const LoadingPiano = ({onStart, isInitialized}) => {
 
     </div>
 
-    : <> </>
+
 
    
   )
