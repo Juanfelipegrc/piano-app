@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux"
-import { setAudioContext, setInstrument, setIsInitialized, setPlayer } from "../store/slices/pianoSlice";
+import { setInstrument, setIsInitialized } from "../store/slices/pianoSlice";
 
 export const usePianoStore = () => {
   

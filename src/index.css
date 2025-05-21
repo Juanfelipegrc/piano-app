@@ -2,18 +2,17 @@
     outline: none;
 }
 
-html, body, #root {
+body {
     height: 100%;
     margin: 0;
     padding: 0;
     background-color: rgb(80, 120, 186);
-    overflow-y: hidden;
   }
 
   
   #root {
-    display: flex;
-    flex-direction: column;
+    overflow-y: auto;
+    height: 100vh;
   }
 
 .container-loading-piano{
@@ -25,4 +24,9 @@ html, body, #root {
     z-index: 999;
     height: 100vh;
 
+}
+
+.piano-container-height{
+  height: calc(100vh - 88px) !important;
+  overflow-y: auto;
 }
