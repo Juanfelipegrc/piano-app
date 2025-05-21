@@ -152,7 +152,7 @@ export const PianoApp = () => {
     if(isInitialized && actualWidth <= 768){
     Swal.fire({
         title: 'IMPORTANT',
-        text: "'If you can't hear the piano sound, please disable Silent Mode or raise the volume.",
+        text: "If you can't hear the piano sound, please disable Silent Mode or raise the volume.",
         icon: 'info'
     });
     }
