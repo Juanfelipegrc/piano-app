@@ -102,6 +102,7 @@ export const PianoApp = () => {
   const { isInitialized, instrument, onSetIsInitialized, onSetInstrument} = usePianoStore();
 
   const [player, setPlayer] = useState(null);
+  const [actualWidth, setActualWidth] = useState(window.innerWidth);
   const [audioContext, setAudioContext] = useState(null);
 
  
@@ -134,20 +135,6 @@ export const PianoApp = () => {
     
   };
 
-  useEffect(() => {
-
-    if(isInitialized){
-    Swal.fire({
-        title: `${audioContext?.state}`,
-        text: "'If you can't hear the piano sound, please disable Silent Mode or raise the volume.",
-        icon: 'info'
-    });
-    }
-    
-  }, [isInitialized])
-  
-
-
   const playSound = (note) => {
     if (player) {
       player.play(note);
@@ -159,6 +146,36 @@ export const PianoApp = () => {
   Object.keys(keyMap).forEach(note => {
     handlers[note] = () => playSound(note)
   })
+
+  useEffect(() => {
+
+    if(isInitialized && actualWidth <= 768){
+    Swal.fire({
+        title: 'IMPORTANT',
+        text: "'If you can't hear the piano sound, please disable Silent Mode or raise the volume.",
+        icon: 'info'
+    });
+    }
+    
+  }, [isInitialized]);
+
+
+  useEffect(() => {
+
+    const handleResize = () => {
+      setActualWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    }
+
+  }, [])
+  
+
+
 
   useEffect(() => {
     if(isInitialized){

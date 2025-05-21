@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { PianoKeyBlack } from './PianoKeyBlack';
 
 export const PianoKey = ({ notes, notesArray, playSound }) => {
-  const [actualWidth, setActualWidth] = useState(window.innerWidth);
   
 
   const validate = (noteWhite, blackKeys) => {
@@ -13,19 +12,7 @@ export const PianoKey = ({ notes, notesArray, playSound }) => {
     );
   };
 
-  useEffect(() => {
-
-    const handleResize = () => {
-      setActualWidth(window.innerWidth);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    }
-
-  }, [])
+  
 
 
 
