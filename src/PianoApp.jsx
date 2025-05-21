@@ -130,13 +130,12 @@ export const PianoApp = () => {
       await audioContext.resume();
     }
 
-    if (audioContext && audioContext.state !== 'running'){
-      Swal.fire({
-         title: "Is not the piano playing?",
-         text: "'If you can't hear the piano sound, please disable Silent Mode or raise the volume.",
-         icon: 'info'
-       })
-    }
+    Swal.fire({
+       title: `${audioContext?.state}`,
+       text: "'If you can't hear the piano sound, please disable Silent Mode or raise the volume.",
+       icon: 'info'
+     })
+    
   };
 
 
